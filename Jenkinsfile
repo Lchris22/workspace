@@ -12,6 +12,7 @@ pipeline {
             steps {
                 echo "Building.."
                 sh '''
+                docker -v
                 cd backend
                 docker build -t .
                 '''

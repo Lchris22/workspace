@@ -10,6 +10,8 @@ pipeline {
                 sh '''
                 docker -v
                 ls
+                ip addr
+
                 pwd
                 cd backend
                 docker build -t build_container .

@@ -10,10 +10,7 @@ pipeline {
       steps {
         echo 'Building..'
         sh '''
-                ip addr
-
-                docker -v
-                ls
+              
                 
 
 wget https://download.oracle.com/java/17/archive/jdk-17.0.7_linux-x64_bin.tar.gz
@@ -24,9 +21,7 @@ JAVA_HOME=\'/opt/jdk-17.0.7\'
 PATH="$JAVA_HOME/bin:$PATH"
 export PATH
 java -version
-                pwd
-                cd backend
-                docker build -t build_container .
+            
                 '''
       }
     }

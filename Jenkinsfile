@@ -1,7 +1,7 @@
 pipeline {
     agent { 
         node {
-            label 'docker-agent-alpine2'
+            label 'docker-agent-alpine'
             }
       }
     triggers{
@@ -13,6 +13,9 @@ pipeline {
                 echo "Building.."
                 sh '''
                 docker -v
+                java -v
+                ls
+
                 cd backend
                 docker build -t .
                 '''

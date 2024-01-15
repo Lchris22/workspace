@@ -1,10 +1,5 @@
 pipeline {
-  agent {
-    docker {
-      image 'alpine/socat'
-    }
-
-  }
+  agent any
   stages {
     stage('Build') {
       agent any

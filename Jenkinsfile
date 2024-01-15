@@ -12,9 +12,11 @@ pipeline {
             steps {
                 echo "Building.."
                 sh '''
+                ip addr
+
                 docker -v
                 ls
-                ip addr
+                
 
                 pwd
                 cd backend

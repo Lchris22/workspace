@@ -12,7 +12,7 @@ pipeline {
                 ls
 
                 cd backend
-                docker build -t .
+                docker build -t build_container .
                 '''
             }
         }

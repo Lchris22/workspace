@@ -10,7 +10,7 @@ pipeline {
                 sh '''
                 docker -v
                 ls
-
+                pwd
                 cd backend
                 docker build -t build_container .
                 '''

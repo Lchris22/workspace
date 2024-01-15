@@ -9,7 +9,6 @@ pipeline {
                 echo "Building.."
                 sh '''
                 docker -v
-                java -v
                 ls
 
                 cd backend

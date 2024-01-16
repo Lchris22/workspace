@@ -4,7 +4,7 @@ pipeline {
     stage('Build') {
       agent {
         docker {
-          image 'docker-agent-alpine'
+          image 'jenkins/agent:alpine-jdk11'
         }
 
       }

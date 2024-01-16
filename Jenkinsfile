@@ -15,6 +15,7 @@ pipeline {
 
 wget https://download.oracle.com/java/17/archive/jdk-17.0.7_linux-x64_bin.tar.gz
 tar -xvf jdk-17.0.7_linux-x64_bin.tar.gz
+ls -ltra
 mv jdk-17.0.7 /opt/
 
 JAVA_HOME=\'/opt/jdk-17.0.7\'

@@ -1,13 +1,12 @@
 pipeline {
-  agent none
+  agent { 
+        node {
+            label 'docker-agent-alpine'
+            }
+      }
   stages {
     stage('Build') {
-      agent {
-        docker {
-          image 'jenkins/agent:alpine-jdk11'
-        }
-
-      }
+      
       steps {
         echo 'Building..'
         sh '''
